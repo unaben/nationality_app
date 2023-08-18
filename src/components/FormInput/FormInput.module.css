@@ -1,0 +1,14 @@
+.container {
+    padding: 2em ;
+    background-color: #282c34;
+    min-height: 100vh;
+    /* margin: 0 auto; */
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  input, button{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+  }
