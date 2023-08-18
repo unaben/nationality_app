@@ -20,7 +20,7 @@ const FormInput = () => {
     <div className={style.container}>
       <div className={style.wrapper}>
         <div className="title-form">
-          <h2>Search pepoles names based on nationality</h2>
+          <h2>Search person's names based on nationality</h2>
           <div style={{ marginBottom: "20px" }}>
             <form name="nationalities-form" onSubmit={handleSubmit}>
               <input
