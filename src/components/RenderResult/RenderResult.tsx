@@ -9,7 +9,7 @@ type IRenderResultProps = {
 
 const RenderResult: FC<IRenderResultProps> = ({ message, nationalities }) => {
   return (
-    <div>
+    <div className={style.container}>
       <div className={style.message}>{message}</div>
       <div className={style.results}>
         {Array.isArray(nationalities) &&
@@ -22,11 +22,14 @@ const RenderResult: FC<IRenderResultProps> = ({ message, nationalities }) => {
                   {nationality.country_id} -{" "}
                   {(nationality.probability * 100).toFixed(2)}%
                 </h3>
+                <div className={style.imageContent}>
                 <img
                   src={flagUrl}
                   alt={altText}
                   style={{ border: "1px solid black" }}
                 />
+                </div>
+             
               </div>
             );
           })}

@@ -1,14 +1,28 @@
 .container {
-    padding: 2em ;
-    background-color: #282c34;
-    min-height: 100vh;
-    /* margin: 0 auto; */
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
+  max-width: 100%;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  input, button{
-    margin-top: 1rem;
-    padding: .5rem 1rem;
-    font-size: 1.2rem;
-  }
+.wrapper{
+  max-width: 100%;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.wrapper h2{
+  margin-top: 1.5rem;
+}
+
+input,
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+

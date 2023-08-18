@@ -18,7 +18,7 @@ const FormInput = () => {
   };
   return (
     <div className={style.container}>
-      <header>
+      <div className={style.wrapper}>
         <div className="title-form">
           <h2>Check percentage of person's name based on countries</h2>
           <div style={{ marginBottom: "20px" }}>
@@ -37,7 +37,7 @@ const FormInput = () => {
         <div className="results">
           <RenderResult {...{ message, nationalities }} />
         </div>
-      </header>
+      </div>
     </div>
   );
 };
